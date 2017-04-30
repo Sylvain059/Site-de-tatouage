@@ -15,13 +15,13 @@
           <div class="container-menu">
             <div id="menu">     <!--Menu déroulant mobile-->
               <dl>
-                <dt><img src="images/mobile/menu.png" alt="menu"></dt>
+                <dt><img src="../images/mobile/menu.png" alt="menu"></dt>
                 <dd>
                   <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
-                    <li><a href="html/gallery.html">Gallery</a></li>
-                    <li><a href="html/blog.html">Blog</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                   </ul>
                 </dd>
               </dl>
@@ -30,10 +30,10 @@
 
           <div class="menuTablette">    <!--Menu tablette et mobile-->
             <ul class="tablette">
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="html/contact.html">Contact</a></li>
-              <li><a href="html/gallery.html">Gallery</a></li>
-              <li><a href="html/blog.html">Blog</a></li>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
 
@@ -42,11 +42,41 @@
     </header>
 
     <main> <!--Partie principale de la page-->
+     <div class="main">
+
+      <form class="formulaire" action="index.html" method="post"><!--formulaire de contact-->
+        <div class="position_formulaire">
+
+          <label for="nom">Nom</label>
+          <input type="text" name="" value="" id="nom" placeholder="Nom" autofocus="autofocus" required="required">
+
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" value="" id="prenom" placeholder="Prénom" required="required">
+
+          <label for="email">Email</label>
+          <input type="email" name="" value="" id="email" placeholder="martin.baudet@xx.xx" required="required">
+
+          <label for="telephone">Téléphone</label>
+          <input type="tel" name="+33" value="+33" id="telephone" maxlength="13" placeholder="Téléphone" required="required">
+
+          <label for="message">Votre message</label>
+          <textarea name="text" rows="8" cols="80" id="message" placeholder="Entrez votre message" required="required"></textarea>
+
+          <label class="envoyer" for="envoyer"></label>
+          <input type="submit" name="" value="Envoyer" id="envoyer">
+
+        </div>
+      </form>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57458.085488543555!2d-80.23197966418657!3d25.832249958537872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a6172bfeddb9%3A0x37be1741259463eb!2sMiami+Beach%2C+Floride%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1493570313709">
+      </iframe>
+
+     </div>
     </main>
 
     <footer>
      <nav>
-        <ul>
+        <ul> <!--Liens vers les réseaux sociaux-->
           <li><a href="https://twitter.com"><img src="../images/twitter.svg" alt="Twitter"></a></li>
           <li><a href="https://www.facebook.com"><img src="../images/facebook.svg" alt="Facebook"></a></li>
           <li><a href="https://www.instagram.com"><img src="../images/instagram.svg" alt="Instagram"></a></li>
