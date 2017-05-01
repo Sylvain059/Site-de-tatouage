@@ -297,14 +297,22 @@ footer nav ul li{
     }
 
     .containerTablette,
-    .containerTablette h2,
-    .containerTablette p{
+    .containerTablette h2{
         width: auto;
         margin: 10px;
     }
+
+    .containerTablette p{
+        width: auto;
+        margin: 10px;
+        text-align: justify;
+
+    }
+
     .containerTablette img{
         width: 150px;
         height: 200px;
+        margin: 10px;
         border-radius: 3px;
     }
 
@@ -358,9 +366,13 @@ footer nav ul li{
 
     .containerTablette,
     .containerTablette h2,
-    .containerTablette img,
     .containerTablette p{
         width: auto;
+        margin: 25px 10px;
+    }
+
+    .containerTablette img{
+        height: 150px;
         margin: 10px;
     }
 
