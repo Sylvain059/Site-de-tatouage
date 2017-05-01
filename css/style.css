@@ -4,6 +4,7 @@
 }
 
 body{
+    height: 100%;
     background: url("../images/bg.jpg")  no-repeat   fixed center center / cover;
     font-family:  Roboto, helvetica, sans-serif;
 }
@@ -170,12 +171,17 @@ iframe{/*style pour la map*/
 }
 
 .containerMobile,
-.containerMobile img,
 .containerMobile p{
     width: auto;
     margin: 20px 5px;
 }
 
+.containerMobile img{
+    display: block;
+    margin: auto;
+    border: 1px inset black;
+    border-radius: 3px;
+}
 .containerMobile h2{
   width: 250px;
   margin: 20px auto;
@@ -186,6 +192,27 @@ iframe{/*style pour la map*/
     text-align: left;
 }
 
+.galleryMedium, .galleryPc{
+    display: none;
+}
+
+.gallerySmall{
+    width: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallerySmall  a, .gallerySmall a img{
+    width: 150px;
+    height: 200px;
+    border-radius: 3px;
+    align-self: center;
+}
+
+
 /*Personnalisation du footer
 ======================================================================================================================*/
 footer{
@@ -193,6 +220,7 @@ footer{
     bottom: 0;*/
      width: 100%;
      height: 50px;
+     margin-top: 50px;
      background-color: black;
 }
 
@@ -270,17 +298,40 @@ footer nav ul li{
 
     .containerTablette,
     .containerTablette h2,
-    .containerTablette img,
     .containerTablette p{
         width: auto;
         margin: 10px;
     }
+    .containerTablette img{
+        width: 150px;
+        height: 200px;
+        border-radius: 3px;
+    }
+
     .article{
         width: 50%
     }
 
     .article p img{
         float: right;
+    }
+
+    .gallerySmall{
+        display: none;
+    }
+
+    .galleryMedium{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .galleryMedium  a, .galleryMedium a img{
+        width: 300px;
+        height: 300px;
+        margin: 25px 0;
+        border-radius: 3px;
+        align-self: center;
     }
 
 
@@ -315,5 +366,48 @@ footer nav ul li{
 
     .containerTablette p{
         text-align: justify;
+    }
+}
+
+@media (min-width:1135px) {
+
+    .galleryMedium{
+        display: none;
+    }
+
+    .galleryPc{
+        display: flex;;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .galleryPc .gallery01  a, .galleryPc .gallery01 a img{
+        width: 350px;
+        height: 350px;
+        border-radius: 3px;
+        margin: 15px 0 0 15px;
+    }
+
+    .galleryPc .gallery02  a, .galleryPc .gallery02 a img{
+        width: 350px;
+        height: 350px;
+        border-radius: 3px;
+        margin: 15px 15px 0 0;
+    }
+
+    .gallery01{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px
+    }
+
+    .gallery02{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px
     }
 }
